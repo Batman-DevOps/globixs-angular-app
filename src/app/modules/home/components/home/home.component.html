@@ -1,0 +1,78 @@
+<div class="text-center">
+
+    <!-- <section id="main-content">
+        <app-banner></app-banner>
+    </section> -->
+
+    <h1>Globixs is a people centric organization empowering professionally and financially. </h1>
+
+    <section id="hire" class="p-5">
+        <h2><strong class="header-with-background">HIRE</strong></h2>
+        <br>
+        <p>Contract | Permanent | Managed</p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Tell us what you are looking for to get started...</mat-label>
+                <input matInput placeholder="Tell us what you are looking for to get started...">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Position | Location</mat-label>
+                <input matInput placeholder="Position | Location">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Email | Phone #</mat-label>
+                <input matInput placeholder="Email | Phone #">
+            </mat-form-field>
+        </p>
+    </section>
+
+    <section id="get-hired" class="p-5">
+        <h2><strong class="header-with-background">GET HIRED</strong></h2>
+        <br>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Tell us what you are looking for to get started...</mat-label>
+                <input matInput placeholder="Tell us what you are looking for to get started...">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Email | Phone #</mat-label>
+                <input matInput placeholder="Email | Phone #">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Upload Resume or email to hr@globixs.com</mat-label>
+                <input matInput placeholder="Upload Resume or email to hr@globixs.com">
+            </mat-form-field>
+        </p>
+    </section>
+
+    <section id="clientele" class="p-5">
+        <div class="container">
+            <h1>
+                <strong>Clientele</strong>
+            </h1>
+            <div class="row mt-5">
+                <div class="col-md-2 mb-4" *ngFor="let member of youthMembers">
+                    <div class="text-center"><strong>{{member}}</strong></div>
+                    <a data-toggle="collapse">
+                        <div class="image-div">
+                            <img src="assets/images/member.jpg" class="img-fluid rounded-circle" alt="Random Name">
+                        </div>
+                    </a>
+                    <div class="collapse">
+                        <p>Guitarist and Lead Vocalist</p>
+                        <p>Loves long walks on the beach</p>
+                        <p>Member since 1988</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

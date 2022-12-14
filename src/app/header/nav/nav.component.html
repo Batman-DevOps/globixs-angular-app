@@ -1,0 +1,14 @@
+<div class="toolbar-div" [ngClass]="{'flex-container' : (screenSize === 'small')}">
+    <span style="margin-left: 15px;" class="pointer font-weight-light" routerLink="/home" routerLinkActive="active-link"
+        (click)="onNavClick()">
+        <small> Home</small></span>
+    <span style="margin-left: 15px;" class="pointer font-weight-light" routerLink="/youth"
+        routerLinkActive="active-link" (click)="onNavClick()">
+        <small> Hire</small></span>
+    <span style="margin-left: 15px;" class="pointer font-weight-light" routerLink="/community-services"
+        routerLinkActive="active-link" (click)="onNavClick()">
+        <small> Get Hired</small></span>
+    <span style="margin-left: 15px;" class="pointer font-weight-light" routerLink="/contact-us"
+        routerLinkActive="active-link" (click)="onNavClick()">
+        <small> Contact Us</small></span>
+</div>

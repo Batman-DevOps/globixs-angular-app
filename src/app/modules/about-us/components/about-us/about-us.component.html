@@ -1,0 +1,38 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="pt-4">
+                <h1>
+                    <strong>About Us</strong>
+                </h1>
+                <p class="mt-4">
+                    <strong>GiveTheNeed</strong> is a non-profit organization helping those in need with-in our community.
+                </p>
+                <p>
+                    We believe in giving back to our community with grace and compassion, building relationships along
+                    the way.
+                </p>
+            </div>
+        </div>
+        <div class="offset-md-2 col-md-2 col-sm-12 text-end">
+            <div class="pt-5 p-3">
+                <img src="assets/images/presidents-award.png" height="140" width="140" alt="No events" />
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 text-end">
+            <div class="pt-5 p-3">
+                <img src="assets/images/501c3-certified.png" height="140" width="140" alt="No events" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4" *ngFor="let item of aboutUsContent; let i = index;">
+            <div class="border rounded-3 p-3">
+                <h6><strong>{{item?.title}}</strong></h6>
+                <p><small [innerHTML]="item?.description"></small></p>
+            </div>
+        </div>
+    </div>
+</div>

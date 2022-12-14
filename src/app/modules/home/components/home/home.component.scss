@@ -1,0 +1,18 @@
+mat-form-field {
+    width: 50%;
+}
+
+#who-are-we {
+    background-color: #fdeaf1;
+}
+
+.image-div > img {
+    height: 100px !important;
+    width: 100px !important;
+}
+
+@media (max-width: 992px) {
+    .image-div > img {
+        height: 100% !important;
+    }
+}
