@@ -1,14 +1,48 @@
-#hire, #clientele {
+#hire {
     background-color: #f6f9fc;
 }
 
-.image-div > img {
+#clientele>.container {
+    background-color: #b8b8b8;
+    border-radius: 5px;
+}
+
+.scroll-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #a3a3a3;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+}
+
+.child {
+    width: 120px;
+    height: 100px;
+    margin: 1px 10px;
+    overflow: hidden;
+}
+
+.image-div>img {
     height: 100px !important;
     width: 100px !important;
+    background-color: #ffffff !important;
 }
 
 @media (max-width: 992px) {
-    .image-div > img {
+    .image-div>img {
         height: 100% !important;
     }
 }

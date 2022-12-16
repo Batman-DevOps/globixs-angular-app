@@ -5,12 +5,13 @@
     </section> -->
 
     <section id="tagline" class="pt-5 pb-5">
-        <h1> <span class="primary-text">Globixs</span> is a people centric organization empowering professionally and financially.</h1>
+        <h1> <span class="primary-text">Globixs</span> is a people centric organization empowering professionally and
+            financially.</h1>
     </section>
 
     <section id="hire" class="pt-5 pb-5">
         <div class="container">
-            <h2><strong class="header-with-background">HIRE</strong></h2>
+            <h2><strong class="primary-text">HIRE</strong></h2>
             <br>
             <p><strong>Contract | Permanent | Managed</strong></p>
             <div class="row">
@@ -23,7 +24,7 @@
 
     <section id="get-hired" class="pt-5 pb-5">
         <div class="container">
-            <h2><strong class="header-with-background">GET HIRED</strong></h2>
+            <h2><strong class="primary-text">GET HIRED</strong></h2>
             <br>
             <div class="row">
                 <div class="offset-md-3 col-md-6">
@@ -34,23 +35,18 @@
     </section>
 
     <section id="clientele" class="pt-5 pb-5">
-        <div class="container">
-            <h1>
+        <div class="container pt-4 pb-4">
+            <!-- <h1>
                 <strong>Clientele</strong>
-            </h1>
-            <div class="row mt-5">
-                <div class="col-md-2 mb-4" *ngFor="let member of youthMembers">
-                    <div class="text-center"><strong>{{member}}</strong></div>
+            </h1> -->
+            <div class="row mt-5 scroll-container">
+                <div class="col-md-2 mb-4" *ngFor="let logo of logos">
                     <a data-toggle="collapse">
-                        <div class="image-div">
-                            <img src="assets/images/member.jpg" class="img-fluid rounded-circle" alt="Random Name">
+                        <div class="image-div child">
+                            <img [src]="logo?.logo" class="img-fluid rounded-circle" alt="Random Name">
                         </div>
                     </a>
-                    <div class="collapse">
-                        <p>Guitarist and Lead Vocalist</p>
-                        <p>Loves long walks on the beach</p>
-                        <p>Member since 1988</p>
-                    </div>
+                    <div class="text-center mt-2"><strong>{{logo?.name}}</strong></div>
                 </div>
             </div>
         </div>
