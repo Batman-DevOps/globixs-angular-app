@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { HireComponent } from './components/hire/hire.component';
+
+const routes: Routes = [
+  { path: '', pathMatch: 'full', component: HireComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

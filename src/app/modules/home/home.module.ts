@@ -6,17 +6,10 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 
-import { HowToHelpComponent } from './components/how-to-help/how-to-help.component';
-import { WhoAreWeComponent } from './components/who-are-we/who-are-we.component';
-import { WhatWeDoComponent } from './components/what-we-do/what-we-do.component';
-
 @NgModule({
   declarations: [
     HomeComponent,
-    BannerComponent,
-    HowToHelpComponent,
-    WhoAreWeComponent,
-    WhatWeDoComponent
+    BannerComponent
   ],
   imports: [
     CommonModule,

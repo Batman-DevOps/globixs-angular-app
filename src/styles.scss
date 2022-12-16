@@ -68,10 +68,6 @@ mat-form-field {
     color: $primary-color;
 }
 
-.blue-font {
-    color: #0071bc;
-}
-
 @media (max-width: 992px) {
     .image-div > img {
         height: 100% !important;
@@ -132,9 +128,9 @@ mat-form-field {
 }
 // Scrollbar
 
-
 body {
-    color: #777;
+    color: #252525;
+    // color: #777;
 }
 
 h1, h2, h3, h4, h5, h6 {

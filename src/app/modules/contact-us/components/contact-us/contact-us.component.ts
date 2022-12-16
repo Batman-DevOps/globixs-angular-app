@@ -4,11 +4,6 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
 import { ContactUsService } from '../../contact-us.service';
 
-// import 'src/assets/smtp/smtp.js';
-// import 'src/assets/smtp/smtp';
-
-declare let Email: any;
-
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -19,50 +14,37 @@ export class ContactUsComponent implements OnInit {
   contactForm!: FormGroup;
   contactUsDetails = [{
     title: 'Location',
-    icon: '',
-    details: 'Seattle, WA | USA'
-  }, {
-    title: 'Phone Number',
-    icon: '',
-    details: '+1 425-666-7999'
+    icon: 'assets/images/location_on.png',
+    details: '1729 208TH ST SE, SUITE 103, BOTHELL, WA 98012'
   }, {
     title: 'Email',
-    icon: '',
-    details: 'care@givetheneed.org'
+    icon: 'assets/images/email.png',
+    details: 'info@theteammc.com'
+  }, {
+    title: 'Phone Number',
+    icon: 'assets/images/phone.png',
+    details: '+1 425.666.8998'
   }];
   fromEmailAddress = new FormControl(null, Validators.required);
 
   constructor(
-    private contactUsService: ContactUsService
+    private contactUsService: ContactUsService,
+    private formBuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {
-    // this.initializeForm();
-    // this.getUserDetails();
+    this.initializeForm();
   }
 
   initializeForm() {
 
     this.contactForm = new FormGroup({
-      // name: this.formBuilder.group({
-      //   firstName: ['', Validators.required],
-      //   lastName: ['', Validators.required]
-      // }),
-      email: new FormControl(''),
-      message: new FormControl('', Validators.required)
+      name: new FormControl(''),
+      email: new FormControl('', Validators.required),
+      phone: new FormControl(''),
+      subject: new FormControl(''),
+      more: new FormControl('')
     });
-    // this.contactForm.controls['name'].disable();
-    // this.contactForm.controls['email'].disable();
-  }
-
-  getUserDetails() {
-    // this.userService.authMe().subscribe((res: Response) => {
-    //   this.userInfo = res?.data;
-    //   this.contactForm.patchValue({
-    //     name: this.userInfo.name,
-    //     email: this.userInfo.email
-    //   })
-    // });
   }
 
   handleContactUs() {

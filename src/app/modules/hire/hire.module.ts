@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HireRoutingModule } from './hire-routing.module';
-import { HireComponent } from './components/hire/hire.component';
+import { SharedModule } from 'src/app/shared/modules/shared.module';
 
+import { HireComponent } from './components/hire/hire.component';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { HireComponent } from './components/hire/hire.component';
   ],
   imports: [
     CommonModule,
-    HireRoutingModule
+    HireRoutingModule,
+    SharedModule
   ]
 })
 export class HireModule { }

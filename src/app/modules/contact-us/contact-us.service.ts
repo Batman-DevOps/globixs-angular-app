@@ -5,7 +5,7 @@ import { HttpHeaders, HttpClient, HttpParams, HttpErrorResponse } from '@angular
 @Injectable()
 export class ContactUsService {
 
-  public APP_NAME: string = 'Give The Need';
+  public APP_NAME: string = 'Globixs';
 
   constructor(
     private http: HttpClient
