@@ -1,7 +1,11 @@
-$link-highlight: #b90000;
+$link-highlight: #828fd4;
 
 .example-spacer {
     flex: 1 1 auto;
+}
+
+#toolbar {
+    background-color: #e8ebf7;
 }
 
 mat-toolbar {
@@ -17,7 +21,7 @@ mat-toolbar {
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: #fdc5c5;
+    background-color: #919cd9;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -28,7 +32,7 @@ mat-toolbar {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #e8ebf7;
     display: block;
     transition: 0.3s;
 }

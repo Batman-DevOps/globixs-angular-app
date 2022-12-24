@@ -11,8 +11,8 @@
                 <img src="assets/images/get-in-touch.png" alt="Contact Us image" class="img-fluid mx-auto" />
             </div> -->
 
-            <span>Let's Talk</span>
-            <h2><strong class="header-with-background">We Love To Help</strong></h2>
+            <span class="badge badge-primary rounded-pill">Let's Talk</span>
+            <h2><strong class="primary-text">We Love To Help</strong></h2>
             <h5 class="mt-3 justify-content">
                 For more information about MC Technology services, please complete and submit the form and one of our
                 representatives will contact you soon. If you’re looking for a faster response, give us a call at
@@ -20,13 +20,13 @@
             </h5>
             <div class="row mt-5 text-start">
                 <div class="col-md-12" *ngFor="let contact of contactUsDetails; let i = index;">
-                    <div class="card mb-4">
+                    <div class="card-container mb-4">
                         <!-- <div>{{contact?.title}}</div> -->
-                        <div>
+                        <!-- <div> -->
                             <span class="image-div">
                                 <img [src]="contact?.icon" alt="Icon" class="mx-auto" />
                             </span> &nbsp;&nbsp; <strong>{{contact?.details}}</strong>
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>

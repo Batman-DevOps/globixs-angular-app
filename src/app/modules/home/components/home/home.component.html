@@ -1,8 +1,8 @@
-<div class="text-center mt-3">
+<div class="text-center">
 
-    <!-- <section id="main-content">
+    <section id="main-content">
         <app-banner></app-banner>
-    </section> -->
+    </section>
 
     <section id="tagline" class="pt-5 pb-5">
         <h1> <span class="primary-text">Globixs</span> is a people centric organization empowering professionally and
@@ -13,7 +13,7 @@
         <div class="container">
             <h2><strong class="primary-text">HIRE</strong></h2>
             <br>
-            <p><strong>Contract | Permanent | Managed</strong></p>
+            <p class="hiring-type"><strong>Contract | Permanent | Managed</strong></p>
             <div class="row">
                 <div class="offset-md-3 col-md-6">
                     <app-hire-form></app-hire-form>
@@ -39,16 +39,32 @@
             <!-- <h1>
                 <strong>Clientele</strong>
             </h1> -->
-            <div class="row mt-5 scroll-container">
-                <div class="col-md-2 mb-4" *ngFor="let logo of logos">
+            <!-- <div class="d-flex mt-5 scroll-container text-center">
+                <div class="flex-fill mb-4" *ngFor="let logo of logos">
                     <a data-toggle="collapse">
-                        <div class="image-div child">
+                        <div class="image-div">
                             <img [src]="logo?.logo" class="img-fluid rounded-circle" alt="Random Name">
                         </div>
                     </a>
                     <div class="text-center mt-2"><strong>{{logo?.name}}</strong></div>
                 </div>
+            </div> -->
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide d-flex align-items-center" *ngFor="let logo of logos">
+                        <div class="image-div">
+                            <img [src]="logo?.logo" class="img-fluid rounded-circle" alt="Random Name">
+                        </div>
+                    </div>
+                    <div class="slide d-flex align-items-center" *ngFor="let logo of logos">
+                        <div class="image-div">
+                            <img [src]="logo?.logo" class="img-fluid rounded-circle" alt="Random Name">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
 </div>

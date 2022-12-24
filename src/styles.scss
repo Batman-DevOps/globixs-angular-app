@@ -13,14 +13,20 @@ body {
 
 body {
     margin: 0;
-    font-family: 'Oxygen', sans-serif;
+    // font-family: 'Oxygen', sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
 
 *:not(i):not(.fa):not(.fas):not(mat-icon) {
-    font-family: 'Oxygen', sans-serif;
+    // font-family: 'Oxygen', sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
 
 mat-form-field {
+    width: 100%;
+}
+
+.full-width {
     width: 100%;
 }
 
@@ -29,7 +35,7 @@ mat-form-field {
 }
 
 .large-button {
-    height: 3.2em;
+    height: 2.8em;
     font-size: medium;
 }
 
@@ -43,7 +49,9 @@ mat-form-field {
 
 .card {
     border-radius: 10px !important;
-    // border: transparent;
+    border: transparent;
+    padding: 32px;
+    // box-shadow: 1px 1.8px 3px 3px hsl(450deg 0% 0% / 0.05);
 }
 
 .grey-card {
@@ -52,7 +60,8 @@ mat-form-field {
 }
 
 .container-shadow {
-    box-shadow: 0 4px 8px 0 rgba(199, 192, 192, 0.2);
+    box-shadow: 0px 4px 8px 0 hsl(45deg 0% 0% / 0.05);
+    // box-shadow: 0 4px 8px 0 rgba(199, 192, 192, 0.2);
 }
 
 .image-div > img {
@@ -64,16 +73,30 @@ mat-form-field {
     text-justify: inter-word;
 }
 
-.header-with-background {
-    // color: #ffffff;
-    // background-color: #bb0808;
-    color: $primary-color;
-}
-
 @media (max-width: 992px) {
     .image-div > img {
         height: 100% !important;
     }
+}
+
+.badge-primary {
+    background-color: #e1eaff !important;
+    color: $primary-color;
+    padding: 10px;
+}
+
+.info-card {
+    background-color: #f6f9fc;
+    border: none;
+    padding: 16px;
+    box-shadow: inset;
+}
+
+.highlight-card {
+    background-color: transparent;
+    border: none;
+    padding: 16px;
+    border-left: 5px solid #aeb6e3;
 }
 
 /* Clear floats */
@@ -149,10 +172,16 @@ h1 {
     margin-top: 20px;
 }
 
+h2 {
+    font-size: 34px !important;
+    font-weight: 700;
+}
+
 h3 {
     margin: 10px 0 20px 0;
     // letter-spacing: 10px;
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 900;
     color: #283228;
 }
 
