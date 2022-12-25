@@ -42,10 +42,15 @@ export class HireComponent implements OnInit {
     title: 'Government',
     icon: 'assured_workload'
   }];
+  selectedIndex: Number = -1;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  handleMouseEnter(index: Number) {
+    this.selectedIndex = index;
   }
 
 }

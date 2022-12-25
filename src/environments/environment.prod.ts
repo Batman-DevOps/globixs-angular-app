@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: "https://red-poised-panda.cyclic.app/quiz/api/"
+  baseUrl: "https://kind-lime-blackbuck-tutu.cyclic.app/globixs/api/"
 };

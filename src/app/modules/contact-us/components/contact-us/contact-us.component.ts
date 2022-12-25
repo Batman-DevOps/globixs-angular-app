@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
-import { HttpClient } from '@angular/common/http';
-import { ContactUsService } from '../../contact-us.service';
+import { HttpService } from 'src/app/core/services/http.service';
+import { SnackbarService } from 'src/app/core/services/snackbar.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -28,8 +28,9 @@ export class ContactUsComponent implements OnInit {
   fromEmailAddress = new FormControl(null, Validators.required);
 
   constructor(
-    private contactUsService: ContactUsService,
-    private formBuilder: FormBuilder
+    private httpService: HttpService,
+    private formBuilder: FormBuilder,
+    private snackbar: SnackbarService
   ) { }
 
   ngOnInit(): void {
@@ -48,21 +49,10 @@ export class ContactUsComponent implements OnInit {
   }
 
   handleContactUs() {
-    console.log('this.contactForm.value', this.contactForm.getRawValue());
-    // this.communicationService.sendContactUsEmail(this.contactForm.getRawValue()).subscribe((res: Response) => {
-    //   this.snackbar.openSnackBar(res?.message!, 'Close', 'success-snackbar');
-    //   this.contactForm.patchValue({
-    //     message: ''
-    //   });
-    // });
-  }
-
-  handleSubscribe() {
-    let payload = { to: this.fromEmailAddress.value };
-    console.log('payload', payload)
-    this.contactUsService.post('v1/communications/sendSubscriptionEmail', payload)
-      .subscribe((res: {}) => {
-      console.log('res', res);
+    const url = 'contact-us';
+    this.httpService.post(url, this.contactForm.value).subscribe((res: any) => {
+      this.snackbar.openSnackBar(res.message, 'Close', 'success-snackbar');
+      this.contactForm.reset();
     });
   }
 

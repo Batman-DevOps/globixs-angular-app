@@ -10,6 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './header/nav/nav.component';
+import { HttpService } from './core/services/http.service';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,7 @@ import { NavComponent } from './header/nav/nav.component';
   exports: [
     SharedModule
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

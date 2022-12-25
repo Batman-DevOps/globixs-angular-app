@@ -1,23 +1,26 @@
-<div class="row">
-    <div class="col-md-12">
-        <mat-form-field appearance="fill">
-            <mat-label>Tell us what you are looking for to get started...</mat-label>
-            <textarea matInput rows="4" placeholder="Tell us what you are looking for to get started..."></textarea>
-        </mat-form-field>
+<form [formGroup]="hireForm" novalidate (ngSubmit)="handleSubmitClick()">
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="fill">
+                <mat-label>Tell us what you are looking for to get started...</mat-label>
+                <textarea matInput rows="4" formControlName="subject" placeholder="Tell us what you are looking for to get started..."></textarea>
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field appearance="fill">
+                <mat-label>Position | Location</mat-label>
+                <input matInput placeholder="Position | Location" formControlName="location">
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field appearance="fill">
+                <mat-label>Email | Phone #</mat-label>
+                <input matInput placeholder="Email | Phone #" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div class="col-md-2 offset-md-10">
+            <button type="submit" class="full-width large-button" mat-raised-button color="primary"
+                [disabled]="hireForm.invalid || !hireForm.dirty">Submit</button>
+        </div>
     </div>
-    <div class="col-md-6">
-        <mat-form-field appearance="fill">
-            <mat-label>Position | Location</mat-label>
-            <input matInput placeholder="Position | Location">
-        </mat-form-field>
-    </div>
-    <div class="col-md-6">
-        <mat-form-field appearance="fill">
-            <mat-label>Email | Phone #</mat-label>
-            <input matInput placeholder="Email | Phone #">
-        </mat-form-field>
-    </div>
-    <div class="col-md-2 offset-md-10">
-        <button type="button" class="full-width large-button" mat-raised-button color="primary" (click)="handleSubmitClick()">Submit</button>
-    </div>
-</div>
+</form>

@@ -1,14 +1,43 @@
-<div class="container mt-4">
-    
-    <h2>Globixs cares YOU. Join us to advance your professional career.</h2>
-    <p>Why join us?</p>
-    <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-    </ul>
+<div class="container mt-5">
 
-    <p>Contact -> Connect -> Get Hired</p>
+    <h2 class="text-center">Globixs cares YOU. Join us to advance your professional career.</h2>
 
-    <app-get-hired-form></app-get-hired-form>
+    <div class="what text-center mt-5">
+        <h2 class="primary-text">Why join us?</h2>
+        <div class="row mt-5 mb-4">
+            <div class="col-md-6">
+                <div class="image-div">
+                    <img src="assets/images/what-we-offer.png" alt="What we offer" class="mx-auto" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="hover-card m-5 text-start" *ngFor="let service of services; let i = index;"
+                    (mouseenter)="handleMouseEnter(i)">
+                    <h3 class="mb-4"><strong>0{{i + 1}}&nbsp;&nbsp;{{service?.title}}</strong></h3>
+                    <p class="mt-3 text-secondary justify-content" *ngIf="selectedIndex == i">{{service?.desciption}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <p>Contact -> Connect -> Get Hired</p> -->
+
+    <div class="mt-5 p-5 d-flex justify-content-center">
+        <div class="wrapper">
+            <div class="arrow-steps clearfix">
+                <div class="step"><span>Contact</span></div>
+                <div class="step"><span>Connect</span></div>
+                <div class="step"><span>Get Hired</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5">
+        <div class="card container-shadow text-center">
+            <h3 class="primary-text"><strong>GET HIRED</strong></h3>
+            <br>
+            <app-get-hired-form></app-get-hired-form>
+        </div>
+    </div>
 </div>
