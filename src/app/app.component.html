@@ -1,7 +1,7 @@
 <div class="app-container">
   <app-header></app-header>
-  <div class="content">
-    <router-outlet></router-outlet>
+  <div class="content" #mainContent>
+    <router-outlet class="router-flex" (activate)="onActivate($event)"></router-outlet>
     <app-footer></app-footer>
   </div>
   <div class="d-none d-lg-block">
