@@ -1,5 +1,11 @@
 #hire {
-    background-color: #f7f8fc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#get-hired {
+    border-radius: 10px;
+    background-color: #e9ebf7;
 }
 
 #clientele > .container {
@@ -28,10 +34,15 @@
     background-color: #485abf;
 }
 
-.image-div > img {
+.image-div > .brand-logo {
     height: 80px !important;
     width: 80px !important;
     background-color: #ffffff !important;
+}
+
+.image-div > .tagline-img {
+    height: 400px !important;
+    width: 100%;
 }
 
 .hiring-type {

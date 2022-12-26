@@ -1,19 +1,18 @@
 <div class="container mt-5">
-
     <h2 class="text-center">Globixs cares YOU. Join us to advance your professional career.</h2>
 
-    <div class="what text-center mt-5">
-        <h2 class="primary-text">Why join us?</h2>
-        <div class="row mt-5 mb-4">
+    <div class="what text-start p-5">
+        <div class="row">
             <div class="col-md-6">
                 <div class="image-div">
-                    <img src="assets/images/what-we-offer.png" alt="What we offer" class="mx-auto" />
+                    <img src="assets/images/what-we-offer.jpg" alt="What we offer" class="img-fluid" />
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="hover-card m-5 text-start" *ngFor="let service of services; let i = index;"
-                    (mouseenter)="handleMouseEnter(i)">
-                    <h3 class="mb-4"><strong>0{{i + 1}}&nbsp;&nbsp;{{service?.title}}</strong></h3>
+            <div class="offset-md-1 col-md-4 mt-5">
+                <h2 class="primary-text mb-5">Why join us?</h2>
+                <div class="hover-card text-start" *ngFor="let service of services; let i = index;"
+                    (mouseenter)="handleMouseEnter(i)" [ngClass]="{'hover-card-highlight': selectedIndex == i}">
+                    <h3 class="mb-4">0{{i + 1}}&nbsp;&nbsp;{{service?.title}}</h3>
                     <p class="mt-3 text-secondary justify-content" *ngIf="selectedIndex == i">{{service?.desciption}}
                     </p>
                 </div>
@@ -21,23 +20,36 @@
         </div>
     </div>
 
-    <!-- <p>Contact -> Connect -> Get Hired</p> -->
-
-    <div class="mt-5 p-5 d-flex justify-content-center">
-        <div class="wrapper">
-            <div class="arrow-steps clearfix">
-                <div class="step"><span>Contact</span></div>
-                <div class="step"><span>Connect</span></div>
-                <div class="step"><span>Get Hired</span></div>
+    <div class="mt-5">
+        <div class="row p-5 d-flex justify-content-center">
+            <div class="col-md-3" *ngFor="let step of steps;">
+                <div class="card card-process text-center container-shadow">
+                    <i class="material-icons"
+                        [ngStyle]="{'background-color': step?.color}">{{step?.icon}}</i>
+                    <h3 class="pt-4"><strong>{{step?.name}}</strong></h3>
+                    <p>Description goes here</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="p-5">
+    <section class="p-5 text-center mt-5 mb-5" id="get-hired">
+        <h2><strong>Get Hired</strong></h2>
+        <br>
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <div class="card container-shadow">
+                    <app-hire-form></app-hire-form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="p-5">
         <div class="card container-shadow text-center">
             <h3 class="primary-text"><strong>GET HIRED</strong></h3>
             <br>
             <app-get-hired-form></app-get-hired-form>
         </div>
-    </div>
+    </div> -->
 </div>

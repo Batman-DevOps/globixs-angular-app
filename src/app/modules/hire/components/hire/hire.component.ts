@@ -19,11 +19,11 @@ export class HireComponent implements OnInit {
   }];
 
   processes = [
-    { name: 'Contact', icon: 'contacts', color: '#e7e7e7', description: 'Sample text for Contact' },
-    { name: 'Connect', icon: 'cable', color: '#fecbc2', description: 'Sample text for Connect' },
-    { name: 'Review', icon: 'reviews', color: '#ffeeb5', description: 'Sample text for Review' },
-    { name: 'Interview', icon: 'laptop_mac', color: '#e9edf5', description: 'Sample text for Interview' },
-    { name: 'Hire', icon: 'check_box', color: '#b5e0c6', description: 'Sample text for Hire' },
+    { name: 'Contact', icon: 'contacts', color: '#adadad', description: 'Sample text for Contact' },
+    { name: 'Connect', icon: 'cable', color: '#fc7962', description: 'Sample text for Connect' },
+    { name: 'Review', icon: 'reviews', color: '#ffd753', description: 'Sample text for Review' },
+    { name: 'Interview', icon: 'laptop_mac', color: '#8ba0ca', description: 'Sample text for Interview' },
+    { name: 'Hire', icon: 'check_box', color: '#8ccfa6', description: 'Sample text for Hire' },
   ];
 
   spectrums = [{

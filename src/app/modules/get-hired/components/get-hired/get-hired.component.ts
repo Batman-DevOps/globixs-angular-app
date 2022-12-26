@@ -19,6 +19,12 @@ export class GetHiredComponent implements OnInit {
   }];
   selectedIndex: Number = -1;
 
+  steps = [
+    { name: 'Contact', icon: 'contacts', color: '#fc7962' },
+    { name: 'Connect', icon: 'cable', color: '#ffd753' },
+    { name: 'Get Hired', icon: 'check_box', color: '#8ccfa6' }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

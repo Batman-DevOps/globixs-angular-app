@@ -5,13 +5,32 @@
     </section>
 
     <section id="tagline" class="container p-5">
-        <h1><span class="primary-text">Globixs</span> is a people centric organization empowering professionally and
-            financially.</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-div">
+                    <img src="assets/images/recruitment.jpg" class="img-fluid tagline-img" alt="Random Name">
+                </div>
+            </div>
+            <div class="offset-md-1 col-md-4 mt-5">
+                <h1><span class="primary-text">Globixs</span> is a people centric organization empowering professionally
+                    and
+                    financially.</h1>
+            </div>
+        </div>
     </section>
 
-    <section id="hire" class="pt-5 pb-5">
-        <div class="container">
-            <h2><strong class="primary-text">HIRE</strong></h2>
+    <section class="mt-5">
+        <div class="container p-5" id="hire">
+            <div class="row">
+                <div class="offset-md-4 col-md-4">
+                    <!-- <div class="p-5"> -->
+                        <h2><strong>Hire Talents Within A Few Minutes!</strong></h2>
+                        <p class="sub-text mt-4">You can start hiring talents within a few minutes using the easy and
+                            user
+                            friendly features</p>
+                    <!-- </div> -->
+                </div>
+            </div>
             <br>
             <p class="hiring-type"><strong>Contract | Permanent | Managed</strong></p>
             <div class="row">
@@ -22,9 +41,10 @@
         </div>
     </section>
 
-    <section id="get-hired" class="pt-5 pb-5">
-        <div class="container">
-            <h2><strong class="primary-text">GET HIRED</strong></h2>
+    <section class="mt-5">
+        <div class="container p-5" id="get-hired">
+            <h2><strong>Get hired</strong></h2>
+            <!-- <h2><strong class="primary-text">GET HIRED</strong></h2> -->
             <br>
             <div class="row">
                 <div class="offset-md-3 col-md-6">
@@ -54,12 +74,12 @@
                 <div class="slide-track">
                     <div class="slide d-flex align-items-center" *ngFor="let logo of logos">
                         <div class="image-div">
-                            <img [src]="logo?.logo" class="img-fluid rounded-circle" alt="Random Name">
+                            <img [src]="logo?.logo" class="img-fluid rounded-circle brand-logo" alt="Random Name">
                         </div>
                     </div>
                     <div class="slide d-flex align-items-center" *ngFor="let logo of logos">
                         <div class="image-div">
-                            <img [src]="logo?.logo" class="img-fluid rounded-circle" alt="Random Name">
+                            <img [src]="logo?.logo" class="img-fluid rounded-circle brand-logo" alt="Random Name">
                         </div>
                     </div>
                 </div>
