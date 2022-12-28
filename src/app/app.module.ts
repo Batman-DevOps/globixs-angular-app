@@ -12,8 +12,6 @@ import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './header/nav/nav.component';
 import { HttpService } from './core/services/http.service';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

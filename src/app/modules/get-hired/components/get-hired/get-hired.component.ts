@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-get-hired',
@@ -25,10 +25,32 @@ export class GetHiredComponent implements OnInit {
     { name: 'Get Hired', icon: 'check_box', color: '#8ccfa6' }
   ]
 
+  @HostListener('window:scroll') onScroll(e: Event): void {
+    console.log('Hi');
+    // this.reveal();
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  // reveal() {
+  //   console.log('Hi');
+  //   var reveals = document.querySelectorAll(".reveal");
+  //   console.log('Hi');
+  //   for (var i = 0; i < reveals.length; i++) {
+  //     var windowHeight = window.innerHeight;
+  //     var elementTop = reveals[i].getBoundingClientRect().top;
+  //     var elementVisible = 10;
+  
+  //     if (elementTop < windowHeight - elementVisible) {
+  //       reveals[i].classList.add("active");
+  //     } else {
+  //       reveals[i].classList.remove("active");
+  //     }
+  //   }
+  // }
 
   handleMouseEnter(index: Number) {
     this.selectedIndex = index;

@@ -5,6 +5,7 @@ $primary-color: #3f51b5;
     // background-color: #bdc3e8;
     border-radius: 10px;
     background-color: #e9ebf7;
+    // background-color: #bdc3e8;
     padding: 32px;
 }
 
@@ -84,10 +85,14 @@ $primary-color: #3f51b5;
     border-right: 2px solid #f5f8ff;
 }
 
-// #dotted::after {
-//     content: "..................";
-//     letter-spacing: 4px;
-//     font-size: 18px;
-//     color: orange;
-//     // margin-left: 20px;
-// }
+@media (max-width: 992px) {
+    .image-div > img {
+        width: 100% !important;
+        max-height: 300px !important;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-flow: column !important;
+    }
+}

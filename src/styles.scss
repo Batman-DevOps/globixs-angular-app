@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 // $primary-color: #0071bc;
-$primary-color: #3f51b5;
+$primary-color: #485abf;
 // $primary-color: #3269f6;
 
 html,
@@ -74,11 +74,17 @@ mat-form-field {
     text-justify: inter-word;
 }
 
-@media (max-width: 992px) {
-    .image-div > img {
-        height: 100% !important;
-    }
-}
+// @media (max-width: 992px) {
+//     .image-div > img {
+//         height: 100% !important;
+//     }
+// }
+
+// @media (max-width: 992px) {
+//     .image-div > img {
+//         height: 230px !important;
+//     }
+// }
 
 .badge-primary {
     background-color: #e1eaff !important;
@@ -87,10 +93,14 @@ mat-form-field {
 }
 
 .info-card {
-    background-color: #f6f9fc;
+    background-color: #828fd4;
     border: none;
     padding: 16px;
     box-shadow: inset;
+    
+    * {
+        color: #ffffff !important;
+    }
 }
 
 .highlight-card {
@@ -261,4 +271,3 @@ h4 {
 .nav-tabs li a {
     color: #777;
 }
-

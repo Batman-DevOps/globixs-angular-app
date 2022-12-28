@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openNav() {
-    (<HTMLInputElement>document.getElementById("mySidenav")).style.width = "250px";
+    (<HTMLInputElement>document.getElementById("mySidenav")).style.width = "100%";
   }
   
   closeNav() {

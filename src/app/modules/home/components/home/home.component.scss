@@ -53,6 +53,11 @@
     .image-div>img {
         height: 100% !important;
     }
+
+    .image-div > .tagline-img {
+        height: 100% !important;
+        width: 100%;
+    }
 }
 
 @mixin white-gradient {

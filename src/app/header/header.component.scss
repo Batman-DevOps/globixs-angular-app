@@ -1,5 +1,7 @@
 $link-highlight: #828fd4;
 
+$link-highlight: #828fd4;
+
 .example-spacer {
     flex: 1 1 auto;
 }
@@ -17,20 +19,38 @@ mat-toolbar {
 .image-div > img {
     max-height: 55px !important;
 }
+
+.image-div-small > img {
+    max-height: 20px !important;
+}
+
+@media (max-width: 992px) {
+    
+    .image-div {
+        margin-left: 15px;
+    }
+
+    .image-div > img {
+        max-height: 50px !important;
+    }
+
+    .image-div-small > img {
+        max-height: 20px !important;
+    }
+}
 // height="80" width="260"
 
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    // z-index: 1000;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #919cd9;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    width: 100%;
 }
 
 .sidenav a {
@@ -64,10 +84,9 @@ mat-toolbar {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .image-div > img {
-        max-height: 100% !important;
-        z-index: 999;
-        position: relative;
-    }   
-}
+// @media screen and (max-width: 600px) {
+//     .image-div > img {
+//         max-height: 100% !important;
+//         position: relative;
+//     }   
+// }
