@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class HttpService {
 
-    public APP_NAME: string = 'Give The Need';
+    public APP_NAME: string = 'Globixs';
 
     constructor(
         private http: HttpClient

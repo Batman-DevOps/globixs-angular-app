@@ -15,15 +15,15 @@ export class ContactUsComponent implements OnInit {
   contactUsDetails = [{
     title: 'Location',
     icon: 'assets/images/location_on.png',
-    details: '1729 208TH ST SE, SUITE 103, BOTHELL, WA 98012'
+    details: '1729 208TH ST SE, BOTHELL, WA 98012'
   }, {
     title: 'Email',
     icon: 'assets/images/email.png',
-    details: 'info@theteammc.com'
+    details: 'hr@globixs.com'
   }, {
     title: 'Phone Number',
     icon: 'assets/images/phone.png',
-    details: '+1 425.666.8998'
+    details: '+1 425-434-5253'
   }];
   fromEmailAddress = new FormControl(null, Validators.required);
 

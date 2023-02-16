@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     var callback = (entries: any) => {
       entries.forEach((entry: any) => {
         var target = entry.target;
-        if (entry.intersectionRatio >= 0.25) {
+        if (entry.intersectionRatio >= 0.50) {
           target.classList.add("is-inview");
         } else {
           target.classList.remove("is-inview");

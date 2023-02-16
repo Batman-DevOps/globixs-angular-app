@@ -2,25 +2,31 @@
     <div class="row">
         <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
 
-            <span class="badge badge-primary rounded-pill">Let's Talk</span>
+            <!-- <span class="badge badge-primary rounded-pill">Let's Talk</span> -->
             <h2 class="mt-3"><strong>We Love To Help</strong></h2>
             <h5 class="mt-3 justify-content">
-                For more information about MC Technology services, please complete and submit the form and one of our
-                representatives will contact you soon. If you’re looking for a faster response, give us a call at
-                425-666-8998. We look forward to hearing from you.
+                For more information about Globixs, please complete and submit the form and one of our representatives
+                will contact you soon. If you’re looking for a faster response, give us a call at 425-434-5253. We look
+                forward to hearing from you.
             </h5>
             <div class="row mt-5 text-start">
                 <div class="col-md-12" *ngFor="let contact of contactUsDetails; let i = index;">
                     <div class="card-container mb-4">
-                            <span class="image-div">
-                                <img [src]="contact?.icon" alt="Icon" class="mx-auto" />
-                            </span> &nbsp;&nbsp; <strong>{{contact?.details}}</strong>
+                        <span class="image-div">
+                            <img [src]="contact?.icon" alt="Icon" class="mx-auto" />
+                        </span> &nbsp;&nbsp; <strong>{{contact?.details}}</strong>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-7 text-center d-flex justify-content-center align-items-center">
+        <div class="col-md-5 offset-md-1 col-sm-12">
+            <div class="contact-us-image-div">
+                <img src="assets/images/contact-us.jpg" alt="Contact Us image" class="img-fluid mx-auto d-block" />
+            </div>
+        </div>
+
+        <!-- <div class="col-md-7 text-center d-flex justify-content-center align-items-center">
             <div class="card info-card">
                 <form [formGroup]="contactForm" novalidate (ngSubmit)="handleContactUs()">
                     <div class="form-group">
@@ -36,7 +42,8 @@
                             <div class="col-sm-6">
                                 <mat-form-field appearance="fill">
                                     <mat-label>Email</mat-label>
-                                    <input matInput type="email" formControlName="email" placeholder="e.g. abc@gmail.com">
+                                    <input matInput type="email" formControlName="email"
+                                        placeholder="e.g. abc@gmail.com">
                                     <mat-icon matSuffix *ngIf="contactForm.get('email')?.valid">check</mat-icon>
                                 </mat-form-field>
                             </div>
@@ -48,7 +55,7 @@
                                 <mat-form-field appearance="fill">
                                     <mat-label>Phone</mat-label>
                                     <input matInput type="text" formControlName="phone" placeholder="e.g. 1 425 6698">
-                                    <!-- <mat-icon matSuffix *ngIf="contactForm.get('phone')?.valid">check</mat-icon> -->
+                                    <mat-icon matSuffix *ngIf="contactForm.get('phone')?.valid">check</mat-icon>
                                 </mat-form-field>
                             </div>
                             <div class="col-sm-6">
@@ -74,15 +81,15 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <button mat-raised-button type="submit" class="large-button rounded-corner"
-                                color="primary" [disabled]="contactForm.invalid || !contactForm.dirty">
+                            <button mat-raised-button type="submit" class="large-button rounded-corner" color="primary"
+                                [disabled]="contactForm.invalid || !contactForm.dirty">
                                 Send
                             </button>
                         </div>
                     </div>
                 </form>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </div>

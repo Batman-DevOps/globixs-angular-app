@@ -1,0 +1,86 @@
+/*Setting Basic Dimensions to give
+		gallery view */
+.image-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.circle-images img {
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    margin: -45px 10px 0 10px;
+    border: 4px solid #c5c5c5;
+}
+
+.slide-div {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+}
+
+.slide-div img {
+    margin-right: 15px;
+    border-radius: 15px;
+}
+
+.slide-div img:nth-child(1) {
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+.slide-div img:nth-child(2) {
+    margin-bottom: 15px;
+    width: 10%;
+    height: 80%;
+}
+
+.slide-div img:nth-child(3) {
+    margin-bottom: 15px;
+    width: 10%;
+    height: 80%;
+}
+
+.main_view {
+    width: 85%;
+    height: 465px;
+}
+
+.side_view {
+    width: 100%;
+}
+
+.image-div > img {
+    height: 450px !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .image-div > img {
+        height: 230px !important;
+    }
+}
+
+
+.main_view img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.side_view {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.side_view img {
+    width: 9rem;
+    height: 7rem;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0.5rem;
+}
