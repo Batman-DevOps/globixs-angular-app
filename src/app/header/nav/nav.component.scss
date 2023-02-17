@@ -1,6 +1,15 @@
 $link-highlight: #0974e4;
 // $link-highlight: #485abf;
 
+.globixs-menu-bar-title {
+    font-size: 2rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    line-height: 1.25;
+    --tw-text-opacity: 1;
+    color: rgba(59,65,66,var(--tw-text-opacity));
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
