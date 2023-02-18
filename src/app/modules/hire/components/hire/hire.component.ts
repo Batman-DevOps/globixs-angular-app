@@ -7,15 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HireComponent implements OnInit {
 
+  // services = [{
+  //   title: 'Registration',
+  //   desciption: 'Register your personal identity on this platform to access features'
+  // }, {
+  //   title: 'Edit your profile',
+  //   desciption: 'Edit and complete your ID to make it easier for job recruiters to find you'
+  // }, {
+  //   title: 'Upload your resume',
+  //   desciption: 'Upload the latest resume to let recruiters know about work experience'
+  // }];
+
   services = [{
-    title: 'Registration',
-    desciption: 'Register your personal identity on this platform to access features'
+    title: 'Get right talent',
+    desciption: 'Globixs help you post a job and search a candidate that fits your job profile'
   }, {
-    title: 'Edit your profile',
-    desciption: 'Edit and complete your ID to make it easier for job recruiters to find you'
+    title: 'Reach out to candidates',
+    desciption: 'Globixs has a huge candidate database which make it easier to connect with a candidate'
   }, {
-    title: 'Upload your resume',
-    desciption: 'Upload the latest resume to let recruiters know about work experience'
+    title: 'Schedule inerviews',
+    desciption: 'Interview potential fits for your job'
   }];
 
   processes = [

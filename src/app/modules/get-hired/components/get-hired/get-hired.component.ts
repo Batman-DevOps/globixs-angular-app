@@ -7,6 +7,16 @@ import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angul
 })
 export class GetHiredComponent implements OnInit {
 
+  // services = [{
+  //   title: 'Registration',
+  //   desciption: 'Register your personal identity on this platform to access features'
+  // }, {
+  //   title: 'Edit your profile',
+  //   desciption: 'Edit and complete your ID to make it easier for job recruiters to find you'
+  // }, {
+  //   title: 'Upload your resume',
+  //   desciption: 'Upload the latest resume to let recruiters know about work experience'
+  // }];
   services = [{
     title: 'Registration',
     desciption: 'Register your personal identity on this platform to access features'
