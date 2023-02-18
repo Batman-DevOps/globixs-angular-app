@@ -25,16 +25,16 @@ export class HireComponent implements OnInit {
     title: 'Reach out to candidates',
     desciption: 'Globixs has a huge candidate database which make it easier to connect with a candidate'
   }, {
-    title: 'Schedule inerviews',
+    title: 'Schedule interviews',
     desciption: 'Interview potential fits for your job'
   }];
 
   processes = [
-    { name: 'Contact', icon: 'contacts', color: '#adadad', description: 'Sample text for Contact' },
-    { name: 'Connect', icon: 'cable', color: '#fc7962', description: 'Sample text for Connect' },
-    { name: 'Review', icon: 'reviews', color: '#ffd753', description: 'Sample text for Review' },
-    { name: 'Interview', icon: 'laptop_mac', color: '#8ba0ca', description: 'Sample text for Interview' },
-    { name: 'Hire', icon: 'check_box', color: '#8ccfa6', description: 'Sample text for Hire' },
+    { name: 'Contact', icon: 'contacts', color: '#adadad', description: 'Reach out to us with your job requirements' },
+    { name: 'Connect', icon: 'cable', color: '#fc7962', description: 'We connect with candidates as per your requirements' },
+    { name: 'Review', icon: 'reviews', color: '#ffd753', description: 'we help you shortlist a profile' },
+    { name: 'Interview', icon: 'laptop_mac', color: '#8ba0ca', description: 'We set up a interview with a candidate' },
+    { name: 'Hire', icon: 'check_box', color: '#8ccfa6', description: 'We help you hire right candidate' },
   ];
 
   spectrums = [{
