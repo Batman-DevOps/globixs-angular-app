@@ -22,7 +22,11 @@
     padding: 32px;
 }
 
-.card-process>i {
+.card-process > p {
+ min-height: 84px;
+}
+
+.card-process > i {
     margin-top: -65px;
 }
 

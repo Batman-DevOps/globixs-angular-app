@@ -20,10 +20,10 @@ export class HireComponent implements OnInit {
 
   services = [{
     title: 'Get right talent',
-    desciption: 'Globixs help you post a job and search a candidate that fits your job profile'
+    desciption: 'Globixs helps you post a job and search a candidate that fits your job profile'
   }, {
     title: 'Reach out to candidates',
-    desciption: 'Globixs has a huge candidate database which make it easier to connect with a candidate'
+    desciption: 'Globixs has a huge candidate database which makes it easier to connect with a candidate'
   }, {
     title: 'Schedule interviews',
     desciption: 'Interview potential fits for your job'
@@ -32,8 +32,8 @@ export class HireComponent implements OnInit {
   processes = [
     { name: 'Contact', icon: 'contacts', color: '#adadad', description: 'Reach out to us with your job requirements' },
     { name: 'Connect', icon: 'cable', color: '#fc7962', description: 'We connect with candidates as per your requirements' },
-    { name: 'Review', icon: 'reviews', color: '#ffd753', description: 'we help you shortlist a profile' },
-    { name: 'Interview', icon: 'laptop_mac', color: '#8ba0ca', description: 'We set up a interview with a candidate' },
+    { name: 'Review', icon: 'reviews', color: '#ffd753', description: 'We help you shortlist a profile' },
+    { name: 'Interview', icon: 'laptop_mac', color: '#8ba0ca', description: 'We set up an interview with a candidate' },
     { name: 'Hire', icon: 'check_box', color: '#8ccfa6', description: 'We help you hire right candidate' },
   ];
 

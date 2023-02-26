@@ -25,14 +25,14 @@ export class GetHiredComponent implements OnInit {
     desciption: 'We work with trusted partners and provide verified job profiles'
   }, {
     title: 'Get easily noticed',
-    desciption: 'We suggest you upskill your profile that would help you get noticed'
+    desciption: 'We provide suggestions to upskill your profile that would help you get noticed'
   }];
   selectedIndex: Number = -1;
 
   steps = [
     { name: 'Contact', icon: 'contacts', color: '#fc7962', description: 'Let us know about your job desires' },
-    { name: 'Connect', icon: 'cable', color: '#ffd753', description: 'We help you connect with the recruiter which suits youe job desires' },
-    { name: 'Get Hired', icon: 'check_box', color: '#8ccfa6', description: 'Land your dream job, just like that!' }
+    { name: 'Connect', icon: 'cable', color: '#ffd753', description: 'We help you to connect with the recruiter which suits your job desires' },
+    { name: 'Get Hired', icon: 'check_box', color: '#8ccfa6', description: 'With Globixs land your dream job, just like that!' }
   ]
 
   @HostListener('window:scroll') onScroll(e: Event): void {
